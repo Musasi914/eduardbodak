@@ -6,23 +6,60 @@
     <link rel="stylesheet" href="./src/reset.css" />
     <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>eduardbodak参考 contact</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/service">service</a></li>
-          <li><a href="/about">about</a></li>
-          <li><a href="/works">works</a></li>
-          <li><a href="/contact">contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__title-wrapper">
+          <h1 class="header__title"><a href="/" class="header__title-link">page ◉ title</a></h1>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__lists">
+            <li class="header__list"><a class="header__link" href="/">home</a></li>
+            <li class="header__list"><a class="header__link" href="/about">about</a></li>
+            <li class="header__list"><a class="header__link" href="/works">works</a></li>
+            <li class="header__list active"><a class="header__link" href="/contact">contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__info">
+          <p class="header__info-text">from 2022</p>
+        </div>
+        <div class="header__menu">
+          <button class="header__menu-btn" id="menu-open" aria-expanded="false" aria-controls="menu">Menu</button>
+        </div>
+      </div>
     </header>
-    <main>
-      <section class="height"></section>
+
+    <dialog id="dialog" class="menu">
+      <div class="menu__header">
+        <button class="menu__btn" id="menu-close" aria-expanded="true">close</button>
+      </div>
+      <div class="menu__content">
+        <div class="menu__grab">
+          <div class="menu__grab-inner"><span class="menu__grab-bar"></span></div>
+        </div>
+        <nav class="menu__nav" id="menu">
+          <ul class="menu__lists">
+            <li class="menu__list"><a class="menu__link" href="/">home</a></li>
+            <li class="menu__list"><a class="menu__link" href="/about">about</a></li>
+            <li class="menu__list"><a class="menu__link" href="/works">works</a></li>
+            <li class="menu__list"><a class="menu__link active" href="/contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu__backdrop"></div>
+    </dialog>
+    <main id="swup" class="transition-main">
+      <section class="height">
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quaerat inventore adipisci sequi quidem distinctio, necessitatibus
+          exercitationem recusandae delectus quia tempore dolor officia sapiente porro consequuntur eius vero. Aperiam, consectetur.
+        </h2>
+      </section>
       <section class="height"></section>
     </main>
+    <div class="overlay transition-overlay"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

@@ -6,23 +6,230 @@
     <link rel="stylesheet" href="./src/reset.css" />
     <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>eduardbodak参考 home</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/service">service</a></li>
-          <li><a href="/about">about</a></li>
-          <li><a href="/works">works</a></li>
-          <li><a href="/contact">contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__title-wrapper">
+          <h1 class="header__title"><a href="/" class="header__title-link">page ◉ title</a></h1>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__lists">
+            <li class="header__list active"><a class="header__link" href="/">home</a></li>
+            <li class="header__list"><a class="header__link" href="/about">about</a></li>
+            <li class="header__list"><a class="header__link" href="/works">works</a></li>
+            <li class="header__list"><a class="header__link" href="/contact">contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__info">
+          <p class="header__info-text">from 2022</p>
+        </div>
+        <div class="header__menu">
+          <button class="header__menu-btn" id="menu-open" aria-expanded="false" aria-controls="menu">Menu</button>
+        </div>
+      </div>
     </header>
-    <main>
-      <section class="height"></section>
+
+    <dialog id="dialog" class="menu">
+      <div class="menu__header">
+        <button class="menu__btn" id="menu-close" aria-expanded="true">close</button>
+      </div>
+      <div class="menu__content">
+        <div class="menu__grab">
+          <div class="menu__grab-inner"><span class="menu__grab-bar"></span></div>
+        </div>
+        <nav class="menu__nav" id="menu">
+          <ul class="menu__lists">
+            <li class="menu__list"><a class="menu__link active" href="/">home</a></li>
+            <li class="menu__list"><a class="menu__link" href="/about">about</a></li>
+            <li class="menu__list"><a class="menu__link" href="/works">works</a></li>
+            <li class="menu__list"><a class="menu__link" href="/contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="menu__backdrop"></div>
+    </dialog>
+
+    <main id="swup" class="transition-main main-top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__inner">
+          <h2 class="hero__header" id="hero-title">LOREM IPSUM</h2>
+          <div class="hero__cards" aria-hidden="true">
+            <div class="card__wrapper">
+              <div class="card" id="hero-card-1">
+                <div class="card_cover"></div>
+                <div class="card__title">
+                  <span>01</span>
+                  <span>STRENGTH</span>
+                </div>
+                <div class="card__title">
+                  <span>STRENGTH</span>
+                  <span>01</span>
+                </div>
+              </div>
+            </div>
+            <div class="card__wrapper">
+              <div class="card" id="hero-card-2">
+                <div class="card_cover"></div>
+                <div class="card__title">
+                  <span>02</span>
+                  <span>AGIRITY</span>
+                </div>
+                <div class="card__title">
+                  <span>AGIRITY</span>
+                  <span>02</span>
+                </div>
+              </div>
+            </div>
+            <div class="card__wrapper">
+              <div class="card" id="hero-card-3">
+                <div class="card_cover"></div>
+                <div class="card__title">
+                  <span>03</span>
+                  <span>HITPOINT</span>
+                </div>
+                <div class="card__title">
+                  <span>HITPOINT</span>
+                  <span>03</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero__content">
+            <p class="hero__description">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, ipsam. Quisquam illum fugit laborum, similique rem tenetur
+              inventore?
+            </p>
+            <p class="hero__footer">GRID & DESIGN</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" aria-labelledby="about-title">
+        <h2 id="about-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      </section>
+
+      <section class="service" aria-labelledby="service-title">
+        <div class="service__container">
+          <div class="service__inner">
+            <div class="service__header">
+              <h2 class="service__title" id="service-title">service</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="service__cards">
+              <div class="service__card-list">
+                <div class="service__card-wrapper">
+                  <article class="service__card card" id="service-card-1">
+                    <div class="service__card-cover"></div>
+                    <div class="card__front" aria-hidden="true">
+                      <div class="card__title">
+                        <span>01</span>
+                        <span>STRENGTH</span>
+                      </div>
+                      <div class="card__title">
+                        <span>STRENGTH</span>
+                        <span>01</span>
+                      </div>
+                    </div>
+                    <div class="card__back">
+                      <div class="card__title">
+                        <span>01</span>
+                        <span>STRENGTH</span>
+                      </div>
+                      <ul class="card__list">
+                        <li class="card__list-item">Process</li>
+                        <li class="card__list-item">Strenge</li>
+                        <li class="card__list-item">Hyper Power</li>
+                        <li class="card__list-item">Ultra Body</li>
+                        <li class="card__list-item">Windows XP</li>
+                        <li class="card__list-item">Mac OS</li>
+                      </ul>
+                      <div class="card__title">
+                        <span>STRENGTH</span>
+                        <span>01</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="service__card-wrapper">
+                  <article class="service__card card" id="service-card-2">
+                    <div class="service__card-cover"></div>
+                    <div class="card__front" aria-hidden="true">
+                      <div class="card__title">
+                        <span>02</span>
+                        <span>AGIRITY</span>
+                      </div>
+                      <div class="card__title">
+                        <span>AGIRITY</span>
+                        <span>02</span>
+                      </div>
+                    </div>
+                    <div class="card__back">
+                      <div class="card__title">
+                        <span>02</span>
+                        <span>AGIRITY</span>
+                      </div>
+                      <ul class="card__list">
+                        <li class="card__list-item">Service</li>
+                        <li class="card__list-item">Hotspring</li>
+                        <li class="card__list-item">BaseBall</li>
+                        <li class="card__list-item">Slotling</li>
+                        <li class="card__list-item">Technics</li>
+                        <li class="card__list-item">Movie</li>
+                      </ul>
+                      <div class="card__title">
+                        <span>AGIRITY</span>
+                        <span>02</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="service__card-wrapper">
+                  <article class="service__card card" id="service-card-3">
+                    <div class="service__card-cover"></div>
+                    <div class="card__front" aria-hidden="true">
+                      <div class="card__title">
+                        <span>03</span>
+                        <span>HITPOINT</span>
+                      </div>
+                      <div class="card__title">
+                        <span>HITPOINT</span>
+                        <span>03</span>
+                      </div>
+                    </div>
+                    <div class="card__back">
+                      <div class="card__title">
+                        <span>03</span>
+                        <span>HITPOINT</span>
+                      </div>
+                      <ul class="card__list">
+                        <li class="card__list-item">Cards list</li>
+                        <li class="card__list-item">From Japan</li>
+                        <li class="card__list-item">Transpose</li>
+                        <li class="card__list-item">Ultra Body</li>
+                        <li class="card__list-item">Accessibility</li>
+                        <li class="card__list-item">List Item</li>
+                      </ul>
+                      <div class="card__title">
+                        <span>HITPOINT</span>
+                        <span>03</span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="service__footer">
+              <p>end</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="height"></section>
     </main>
+    <div class="overlay transition-overlay"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
