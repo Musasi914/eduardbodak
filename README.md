@@ -38,3 +38,9 @@
 - dialog をオープン時スクロール不可にする。Lenis を使っている場合、lenis.stop()、lenis.start()を使わないとスクロール可能になってしまう
 
 - カードが遠くなって不透明になっていく際、カードが透過していないことに気づいただろうか。私は最初気づかなかった。背景色と同じ色のカバーの透明度を変えているようだ。
+
+## 7/15 追記
+
+sp のメニューを gsap で実装していたが、最適なパッケージを発見<br>
+https://www.npmjs.com/package/react-use-gesture<br>
+https://codesandbox.io/p/sandbox/action-sheet-zuwji?file=%2Fsrc%2Findex.js
