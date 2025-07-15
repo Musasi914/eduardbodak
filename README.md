@@ -44,3 +44,7 @@
 sp のメニューを gsap で実装していたが、最適なパッケージを発見<br>
 https://www.npmjs.com/package/react-use-gesture<br>
 https://codesandbox.io/p/sandbox/action-sheet-zuwji?file=%2Fsrc%2Findex.js
+
+<br><br>
+普通にもっといいの shadcn/ui にあった<br>
+https://ui.shadcn.com/docs/components/drawer
